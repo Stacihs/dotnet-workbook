@@ -10,9 +10,11 @@
     <meta name="viewport" content="width=device-width" />
     <title>RsvpForm</title>
     <link rel="stylesheet" href="~/css/styles.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist//bootstrap.css" />
 </head>
 <body>
-    <form asp-action="RsvpForm" method="post">
+    
+    @*<form asp-action="RsvpForm" method="post">
         <div asp-validation-summary="All"></div>
         <p>
             <label asp-for="Name">Your name:</label>
@@ -34,7 +36,7 @@
                 <option value="false">No, I can't come</option>
             </select>
         </p>
-        <button type="submit">Submit RSVP</button>
+        <button type="submit">Submit RSVP</button>*@
     </form>
 </body>
 </html>
