@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
+
 namespace PartyInvites.Models
 {
     public class GuestResponse
@@ -17,8 +18,8 @@ namespace PartyInvites.Models
 
         [Required(ErrorMessage = "Please enter your phone number")]
         public string Phone { get; set; }
-
-        [Required(ErrorMessage = "Please specify wheter you'll attend")]
+          
+        [Required(ErrorMessage = "Please specify whether you'll attend")]
         public bool?  WillAttend { get; set; }
 
     }
