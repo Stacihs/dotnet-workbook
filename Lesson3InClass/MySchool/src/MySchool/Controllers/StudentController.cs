@@ -12,14 +12,19 @@ namespace MySchool.Controllers
     {
         public IActionResult Index()
         {
-            Student Fred = new Student() { Id = 1, Name = "Fred" };
-            Student John = new Student() { Id = 2, Name = "John" };
-            Student Betty = new Student() { Id = 3, Name = "Betty" };
+            Levels intro = new Levels() { Id = 1, Name = "intro" };
+            Levels intermediate = new Levels() { Id = 2, Name= "intermediate" };
+            Levels advanced = new Levels() { Id = 3, Name = "advanced" };
+
+            Student Fred = new Student() { Id = 1, Name = "Fred" , Levels = intro };
+            Student John = new Student() { Id = 2, Name = "John", Levels = intermediate };
+            Student Betty = new Student() { Id = 3, Name = "Betty", Levels = advanced};
+
             List<Student> studentList = new List<Student>();
             studentList.Add(Fred);
             studentList.Add(John);
             studentList.Add(Betty);
-            Level levels = new Level() { Id = 1, Label = "Intro" };
+            
 
             return View(studentList);
         } 

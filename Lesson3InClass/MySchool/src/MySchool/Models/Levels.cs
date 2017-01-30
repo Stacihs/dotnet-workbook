@@ -5,10 +5,15 @@ using System.Threading.Tasks;
 
 namespace MySchool.Models
 {
-    public class Level
+    public class Levels
     {
         public int Id { get; set; }
-        public string Label { get; set; }
+        public string Name { get; set; }
         
+
+        public virtual ICollection<Student> Students
+        {
+            get; set;
+        }
     }
 }
