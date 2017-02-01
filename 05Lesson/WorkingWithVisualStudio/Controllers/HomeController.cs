@@ -9,6 +9,7 @@ namespace WorkingWithVisualStudio.Controllers
 {
     public class HomeController : Controller
     {
+        string test = "hello";
         public IActionResult Index()
             => View(SimpleRepository.SharedRepository.Products);
     }
