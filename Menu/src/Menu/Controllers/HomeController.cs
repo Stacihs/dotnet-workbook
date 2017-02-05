@@ -11,9 +11,9 @@ namespace Menu.Controllers
     {
         public IActionResult Index()
         {
-            Size small = new Size() { ID = 1, Portion = "Small", Price=2.00};
-            Size medium = new Size() { ID = 2, Portion = "Medium", Price=3.50 };
-            Size large = new Size() { ID = 3, Portion = "Large", Price=5.00 };
+            Size small = new Size() { ID = 1, Portion = "Small", Price=2.00M};
+            Size medium = new Size() { ID = 2, Portion = "Medium", Price=3.50M };
+            Size large = new Size() { ID = 3, Portion = "Large", Price=5.00M };
 
             MenuModel Pork_Fritters_small = new MenuModel() { Name = "Small Pork Fritters", Sizes = small};
             MenuModel Pork_Fritters_medium = new MenuModel() { Name = "Medium Pork Fritters", Sizes = medium };

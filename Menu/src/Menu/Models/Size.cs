@@ -9,7 +9,7 @@ namespace Menu.Models
     {
         public int ID { get; set; }
         public string Portion { get; set; }
-        public double Price { get; set; }
+        public decimal Price { get; set; }
 
         public virtual ICollection<MenuModel> MenuModel {get; set;}
 

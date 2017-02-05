@@ -1,12 +1,9 @@
 ﻿@model IEnumerable<Menu.Models.MenuModel>
 
-@{ 
-    ViewData["Title"] = "Index";
-}
 
 <h2>Our Big Menu</h2>
 
-<table>
+<table class="table">
     <thead>
         <tr>
             <th>
@@ -24,13 +21,13 @@
 @foreach (var item in Model) {
         <tr>
             <td>
+                @Html.DisplayFor(Menu => item.Name)
+            </td>
+            <td>
                 @Html.DisplayFor(Menu => item.Sizes.Portion)
             </td>
             <td>
                 @Html.DisplayFor(Menu => item.Sizes.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(Menu => item.Name )
             </td>
         </tr>
 }
