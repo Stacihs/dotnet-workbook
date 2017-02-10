@@ -200,6 +200,7 @@
 --resource:"C:\Users\Staci\Documents\GitHub\stacihs dotnet\dotnet-workbook\Checkpoint1\src\Checkpoint1\obj\Debug\netcoreapp1.0\Checkpoint1dotnet-compile.deps.json",Checkpoint1.deps.json
 C:\Users\Staci\Documents\GitHub\stacihs dotnet\dotnet-workbook\Checkpoint1\src\Checkpoint1\Program.cs
 C:\Users\Staci\Documents\GitHub\stacihs dotnet\dotnet-workbook\Checkpoint1\src\Checkpoint1\Startup.cs
+C:\Users\Staci\Documents\GitHub\stacihs dotnet\dotnet-workbook\Checkpoint1\src\Checkpoint1\Controllers\CourseController.cs
 C:\Users\Staci\Documents\GitHub\stacihs dotnet\dotnet-workbook\Checkpoint1\src\Checkpoint1\Controllers\HomeController.cs
 C:\Users\Staci\Documents\GitHub\stacihs dotnet\dotnet-workbook\Checkpoint1\src\Checkpoint1\Controllers\StudentController.cs
 C:\Users\Staci\Documents\GitHub\stacihs dotnet\dotnet-workbook\Checkpoint1\src\Checkpoint1\Models\ApplicationContext.cs

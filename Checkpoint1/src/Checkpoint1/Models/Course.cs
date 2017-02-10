@@ -10,7 +10,7 @@ namespace Checkpoint1.Models
         public int Id { get; set; }
         public string Name { get; set; }
         
-        public virtual ICollection<Student> Students { get; set; }
+        public virtual ICollection<Student> Student { get; set; }
    
     }
 }
