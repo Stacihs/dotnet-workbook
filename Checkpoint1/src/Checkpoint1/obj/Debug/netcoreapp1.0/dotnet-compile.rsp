@@ -1,5 +1,5 @@
---temp-output:C:\Users\Staci\Desktop\Checkpoint1\src\Checkpoint1\obj\Debug\netcoreapp1.0\
---out:C:\Users\Staci\Desktop\Checkpoint1\src\Checkpoint1\bin\Debug\netcoreapp1.0\Checkpoint1.dll
+--temp-output:C:\Users\Staci\Documents\GitHub\stacihs dotnet\dotnet-workbook\Checkpoint1\src\Checkpoint1\obj\Debug\netcoreapp1.0\
+--out:C:\Users\Staci\Documents\GitHub\stacihs dotnet\dotnet-workbook\Checkpoint1\src\Checkpoint1\bin\Debug\netcoreapp1.0\Checkpoint1.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -197,11 +197,11 @@
 --reference:C:\Users\Staci\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\Staci\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\Staci\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"C:\Users\Staci\Desktop\Checkpoint1\src\Checkpoint1\obj\Debug\netcoreapp1.0\Checkpoint1dotnet-compile.deps.json",Checkpoint1.deps.json
-C:\Users\Staci\Desktop\Checkpoint1\src\Checkpoint1\Program.cs
-C:\Users\Staci\Desktop\Checkpoint1\src\Checkpoint1\Startup.cs
-C:\Users\Staci\Desktop\Checkpoint1\src\Checkpoint1\Controllers\HomeController.cs
-C:\Users\Staci\Desktop\Checkpoint1\src\Checkpoint1\Controllers\StudentController.cs
-C:\Users\Staci\Desktop\Checkpoint1\src\Checkpoint1\Models\ApplicationContext.cs
-C:\Users\Staci\Desktop\Checkpoint1\src\Checkpoint1\Models\Course.cs
-C:\Users\Staci\Desktop\Checkpoint1\src\Checkpoint1\Models\Student.cs
+--resource:"C:\Users\Staci\Documents\GitHub\stacihs dotnet\dotnet-workbook\Checkpoint1\src\Checkpoint1\obj\Debug\netcoreapp1.0\Checkpoint1dotnet-compile.deps.json",Checkpoint1.deps.json
+C:\Users\Staci\Documents\GitHub\stacihs dotnet\dotnet-workbook\Checkpoint1\src\Checkpoint1\Program.cs
+C:\Users\Staci\Documents\GitHub\stacihs dotnet\dotnet-workbook\Checkpoint1\src\Checkpoint1\Startup.cs
+C:\Users\Staci\Documents\GitHub\stacihs dotnet\dotnet-workbook\Checkpoint1\src\Checkpoint1\Controllers\HomeController.cs
+C:\Users\Staci\Documents\GitHub\stacihs dotnet\dotnet-workbook\Checkpoint1\src\Checkpoint1\Controllers\StudentController.cs
+C:\Users\Staci\Documents\GitHub\stacihs dotnet\dotnet-workbook\Checkpoint1\src\Checkpoint1\Models\ApplicationContext.cs
+C:\Users\Staci\Documents\GitHub\stacihs dotnet\dotnet-workbook\Checkpoint1\src\Checkpoint1\Models\Course.cs
+C:\Users\Staci\Documents\GitHub\stacihs dotnet\dotnet-workbook\Checkpoint1\src\Checkpoint1\Models\Student.cs
