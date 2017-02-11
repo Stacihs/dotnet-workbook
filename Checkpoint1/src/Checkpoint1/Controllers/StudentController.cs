@@ -2,6 +2,8 @@
 using Checkpoint1.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using System.Collections.Generic;
+using System;
 
 namespace Checkpoint1.Controllers
 {
@@ -20,20 +22,8 @@ namespace Checkpoint1.Controllers
         }
         public IActionResult Index()
         {
-            //Course intro = new Course() { Id = 1, Name = "Introduction" };
-            //Course intermediate = new Course() { Id = 2, Name = "Intermediate" };
-            //Course advanced = new Course() { Id = 3, Name = "Advanced" };
-
-            //Student Fred = new Student() { Id = 1, FirstName = "Fred", LastName = "Smith", Courses = intro };
-            //Student John = new Student() { Id = 2, FirstName = "John", LastName = "Doe", Courses = intermediate };
-            //Student Bob = new Student() { Id = 3, FirstName = "Bob", LastName = "Jackson", Courses = advanced };
-            //Student Sam = new Student() { Id = 4, FirstName = "Sam", LastName = "Jones", Courses = advanced };
-            //Student Jill = new Student() { Id = 5, FirstName = "Jill", LastName = "Downing", Courses = intermediate };
-
-
-
-
-            //List<Student> studentsList = new List<Student>();
+            //test Student objects
+           // var Student = new Student() { Id = 1, FirstName = "Jenny", LastName = "Smith", CourseId = 1 };
 
             var students = db_context.Student.Include(c => c.Course);
 
