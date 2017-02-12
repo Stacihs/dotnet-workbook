@@ -18,7 +18,7 @@ namespace Checkpoint1.Controllers
         
         public IActionResult Index()
         {
-            //var course = db_context.Course.Include(s => s.Student);
+            var course = db_context.Course.Include(s => s.Student);
 
             return View(db_context.Course.ToList());
         }
@@ -32,6 +32,8 @@ namespace Checkpoint1.Controllers
         {
             return View();
         }
+
+        //add and save course to the database
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(Course course)
@@ -45,11 +47,13 @@ namespace Checkpoint1.Controllers
 
         public ActionResult Edit(int? Id)
         {
+            
+            var course = db_context.Course.SingleOrDefault(c => c.Id == Id);
+
             if (Id == null)
-            {
+            
                 return HttpNotFound();
-            }
-            var course = db_context.Course.Single(c => c.Id == Id);
+            
 
             return View(course);
         }

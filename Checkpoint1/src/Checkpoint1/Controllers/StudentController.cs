@@ -21,6 +21,7 @@ namespace Checkpoint1.Controllers
             return View(db_context.Student.ToList());
         }
 
+        //add student and save to the database
         public ActionResult Create()
         {
             return View();
