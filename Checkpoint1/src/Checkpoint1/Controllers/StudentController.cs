@@ -36,5 +36,7 @@ namespace Checkpoint1.Controllers
 
             return RedirectToAction("Index", "Student");
         }
+
+
     }
 }
