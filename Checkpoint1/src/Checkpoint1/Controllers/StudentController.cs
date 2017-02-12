@@ -2,8 +2,6 @@
 using Checkpoint1.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
-using System.Collections.Generic;
-using System;
 
 namespace Checkpoint1.Controllers
 {
@@ -11,28 +9,31 @@ namespace Checkpoint1.Controllers
     {
         private ApplicationContext db_context;
 
-        public StudentController(ApplicationContext context)
+        public StudentController (ApplicationContext context)
         {
             db_context = context;
+        }
+
+
+        public IActionResult Index()
+        {
+            
+            return View(db_context.Student.ToList());
         }
 
         public ActionResult Create()
         {
             return View();
         }
-        public IActionResult Index()
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(Student student)
         {
-            //test Student objects
-           // var Student = new Student() { Id = 1, FirstName = "Jenny", LastName = "Smith", CourseId = 1 };
 
-            var students = db_context.Student.Include(c => c.Course);
+            db_context.Student.Add(student);
+            db_context.SaveChanges();
 
-
-
-            return View(students.ToList());
+            return RedirectToAction("Index", "Student");
         }
-
-
     }
-            
 }
