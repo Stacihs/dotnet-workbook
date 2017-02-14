@@ -14,20 +14,27 @@ namespace Checkpoint1.Controllers
             db_context = context;
         }
 
+        protected override void Dispose(bool disposing)
+        {
+            base.Dispose(disposing);
+        }
+
 
         public IActionResult Index()
         {
-            
+            if (ModelState.IsValid)
+            {
+
+            }
             return View(db_context.Student.ToList());
         }
 
-        //add student and save to the database
+        //add student
         public ActionResult Create()
         {
             return View();
         }
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult Create(Student student)
         {
 
@@ -37,6 +44,7 @@ namespace Checkpoint1.Controllers
             return RedirectToAction("Index", "Student");
         }
 
+        
 
     }
 }

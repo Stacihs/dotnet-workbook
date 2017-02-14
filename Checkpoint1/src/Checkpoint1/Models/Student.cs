@@ -6,18 +6,24 @@ namespace Checkpoint1.Models
     public class Student
 
     {
-        [Key]
+        [Required]
         [Display(Name = "Student ID")]
         public int Id { get; set; }
+
+        [Required]
         [Display(Name = "First Name")]
         public string FirstName { get; set; }
+
+        [Required]
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
+
+        [Required]
         [Display(Name = "Course ID")]
         public int CourseId { get; set; }
         
-        [Display(Name = "Course")]
+
         public virtual Course Course { get; set; }
+
     }
-}
-    
+}        

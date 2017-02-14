@@ -15,10 +15,15 @@ namespace Checkpoint1.Controllers
             db_context = context;
         }
 
-        
+        protected override void Dispose(bool disposing)
+        {
+            base.Dispose(disposing);
+        }
+
+
         public IActionResult Index()
         {
-            var course = db_context.Course.Include(s => s.Student);
+            var course = db_context.Course.Include(c => c.Student);
 
             return View(db_context.Course.ToList());
         }
@@ -82,14 +87,7 @@ namespace Checkpoint1.Controllers
             return RedirectToAction("Index");
         }
 
-        //protected override void Dispose(bool disposing)
-        //{
-        //    if (disposing)
-        //    {
-        //        db_context.Dispose();
-        //    }
-        //    base.Dispose(disposing);
-        //}
+        
     }
 }
     

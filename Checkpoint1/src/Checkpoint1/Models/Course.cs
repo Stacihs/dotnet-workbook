@@ -6,13 +6,15 @@ namespace Checkpoint1.Models
 {
     public class Course
     {
-        [Key]
+        [Required]
         [Display(Name = "Course ID")]
         public int Id { get; set; }
+
+        [Required]
         [Display(Name = "Course Title")]
         public string Title { get; set; }
         
-        [Display(Name = "Student Name")]
+        
         public virtual ICollection<Student> Student { get; set; }
    
     }

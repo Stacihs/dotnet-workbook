@@ -2,9 +2,9 @@
 
     @{
         ViewBag.Title = "Index";
-    }
+     }
 
-    <h2>Index</h2>
+    <h2>Student List</h2>
 
     <p>
         @Html.ActionLink("Create New", "Create")
@@ -32,7 +32,7 @@
                 @Html.DisplayFor(modelItem => item.LastName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Course.Id)
+                @Html.DisplayFor(modelItem => item.CourseId)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
