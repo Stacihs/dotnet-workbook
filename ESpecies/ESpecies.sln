@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DDADF0DF-7A06-4653-84DF-31EC8D40D623}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CA26DB41-153D-4CF1-8A18-556048F3E66B}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ESpecies", "src\ESpecies\ESpecies.xproj", "{0933C218-4544-4CC3-BE98-1EE3C459DAAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{8C93BDCE-1ED8-40FA-944B-687E3CCF33BC}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ESpecies.Tests", "test\ESpecies.Tests\ESpecies.Tests.xproj", "{4A5A7692-76EB-46C3-A72E-CE13173BBCB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0933C218-4544-4CC3-BE98-1EE3C459DAAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0933C218-4544-4CC3-BE98-1EE3C459DAAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0933C218-4544-4CC3-BE98-1EE3C459DAAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0933C218-4544-4CC3-BE98-1EE3C459DAAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A5A7692-76EB-46C3-A72E-CE13173BBCB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A5A7692-76EB-46C3-A72E-CE13173BBCB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A5A7692-76EB-46C3-A72E-CE13173BBCB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A5A7692-76EB-46C3-A72E-CE13173BBCB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0933C218-4544-4CC3-BE98-1EE3C459DAAD} = {DDADF0DF-7A06-4653-84DF-31EC8D40D623}
+		{4A5A7692-76EB-46C3-A72E-CE13173BBCB3} = {8C93BDCE-1ED8-40FA-944B-687E3CCF33BC}
+	EndGlobalSection
+EndGlobal
