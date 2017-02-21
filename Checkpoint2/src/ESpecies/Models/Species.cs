@@ -12,7 +12,7 @@ namespace ESpecies.Models
         public string DonorId { get; set; }
         public decimal Donation { get; set; }
 
-        public ICollection<Donor> Donor { get; set; }
+        public ICollection<Sponsor> Donor { get; set; }
    
     }
 }

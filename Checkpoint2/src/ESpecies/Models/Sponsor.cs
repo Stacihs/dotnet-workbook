@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ESpecies.Models
 {
-    public class Donor
+    public class Sponsor
     {
         public int DonorId { get; set; }
         public string FirstName { get; set; }
