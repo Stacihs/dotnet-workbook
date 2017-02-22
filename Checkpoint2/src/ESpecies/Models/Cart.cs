@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 
 namespace ESpecies.Models
 {
     public class Cart
     {
+        [Key]
+        public int Id { get; set; }
         public int SponsorID { get; set; }
         [Display (Name = "Donation Amount")] 
         public decimal Amount { get; set; } 

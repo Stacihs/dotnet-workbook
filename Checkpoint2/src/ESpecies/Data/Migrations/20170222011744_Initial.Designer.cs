@@ -2,13 +2,16 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
+using ESpecies.Data;
 
 namespace ESpecies.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170222011744_Initial")]
+    partial class Initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.1")
@@ -24,8 +27,6 @@ namespace ESpecies.Data.Migrations
                         .IsConcurrencyToken();
 
                     b.Property<decimal>("DonationAmount");
-
-                    b.Property<int?>("DonationId");
 
                     b.Property<string>("Email")
                         .HasAnnotation("MaxLength", 256);
@@ -54,8 +55,6 @@ namespace ESpecies.Data.Migrations
 
                     b.Property<string>("SecurityStamp");
 
-                    b.Property<int?>("SpeciesId");
-
                     b.Property<bool>("TwoFactorEnabled");
 
                     b.Property<int>("UserID");
@@ -65,8 +64,6 @@ namespace ESpecies.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DonationId");
-
                     b.HasIndex("NormalizedEmail")
                         .HasName("EmailIndex");
 
@@ -74,89 +71,7 @@ namespace ESpecies.Data.Migrations
                         .IsUnique()
                         .HasName("UserNameIndex");
 
-                    b.HasIndex("SpeciesId");
-
                     b.ToTable("AspNetUsers");
-                });
-
-            modelBuilder.Entity("ESpecies.Models.Cart", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<decimal>("Amount");
-
-                    b.Property<int?>("DonationId");
-
-                    b.Property<string>("EntityId");
-
-                    b.Property<int?>("SpeciesId");
-
-                    b.Property<int>("SponsorID");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("DonationId");
-
-                    b.HasIndex("SpeciesId");
-
-                    b.ToTable("Cart");
-                });
-
-            modelBuilder.Entity("ESpecies.Models.Donation", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Amount");
-
-                    b.Property<int>("ApplicationUserId");
-
-                    b.Property<string>("EntityID");
-
-                    b.Property<int?>("SpeciesId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("SpeciesId");
-
-                    b.ToTable("Donation");
-                });
-
-            modelBuilder.Entity("ESpecies.Models.Species", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("ComName");
-
-                    b.Property<string>("CountryId");
-
-                    b.Property<string>("Description");
-
-                    b.Property<int>("EntityId");
-
-                    b.Property<int>("ListingDate");
-
-                    b.Property<string>("PopAbbrev");
-
-                    b.Property<string>("PopDesc");
-
-                    b.Property<string>("SciName");
-
-                    b.Property<string>("SpCode");
-
-                    b.Property<string>("SponsorId");
-
-                    b.Property<int>("StatusId");
-
-                    b.Property<string>("TSN");
-
-                    b.Property<string>("VipCode");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Species");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRole", b =>
@@ -264,35 +179,6 @@ namespace ESpecies.Data.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
-                });
-
-            modelBuilder.Entity("ESpecies.Models.ApplicationUser", b =>
-                {
-                    b.HasOne("ESpecies.Models.Donation")
-                        .WithMany("ApplicationUser")
-                        .HasForeignKey("DonationId");
-
-                    b.HasOne("ESpecies.Models.Species")
-                        .WithMany("ApplicationUser")
-                        .HasForeignKey("SpeciesId");
-                });
-
-            modelBuilder.Entity("ESpecies.Models.Cart", b =>
-                {
-                    b.HasOne("ESpecies.Models.Donation")
-                        .WithMany("Cart")
-                        .HasForeignKey("DonationId");
-
-                    b.HasOne("ESpecies.Models.Species")
-                        .WithMany("Cart")
-                        .HasForeignKey("SpeciesId");
-                });
-
-            modelBuilder.Entity("ESpecies.Models.Donation", b =>
-                {
-                    b.HasOne("ESpecies.Models.Species")
-                        .WithMany("Donation")
-                        .HasForeignKey("SpeciesId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRoleClaim<string>", b =>

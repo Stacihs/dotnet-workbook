@@ -1,5 +1,5 @@
---temp-output:C:\Users\Staci\Documents\Visual Studio 2015\Projects\ESpecies\test\ESpecies.Tests\obj\Debug\netcoreapp1.0\
---out:C:\Users\Staci\Documents\Visual Studio 2015\Projects\ESpecies\test\ESpecies.Tests\bin\Debug\netcoreapp1.0\ESpecies.Tests.dll
+--temp-output:C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\test\ESpecies.Tests\obj\Debug\netcoreapp1.0\
+--out:C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\test\ESpecies.Tests\bin\Debug\netcoreapp1.0\ESpecies.Tests.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -107,5 +107,5 @@
 --reference:C:\Users\Staci\.nuget\packages\xunit.extensibility.execution\2.2.0-beta2-build3300\lib\netstandard1.0\xunit.execution.dotnet.dll
 --reference:C:\Users\Staci\.nuget\packages\xunit.runner.reporters\2.2.0-beta2-build3300\lib\netstandard1.1\xunit.runner.reporters.dotnet.dll
 --reference:C:\Users\Staci\.nuget\packages\xunit.runner.utility\2.2.0-beta2-build3300\lib\netstandard1.1\xunit.runner.utility.dotnet.dll
-C:\Users\Staci\Documents\Visual Studio 2015\Projects\ESpecies\test\ESpecies.Tests\Class1.cs
-C:\Users\Staci\Documents\Visual Studio 2015\Projects\ESpecies\test\ESpecies.Tests\Properties\AssemblyInfo.cs
+C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\test\ESpecies.Tests\Class1.cs
+C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\test\ESpecies.Tests\Properties\AssemblyInfo.cs

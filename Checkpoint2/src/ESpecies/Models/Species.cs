@@ -1,9 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ESpecies.Models
 {
     public class Species
     {
+        [Key]
+        public int Id { get; set; }
         public int EntityId { get; set; }
         public string SciName { get; set; }
         public string ComName { get; set; }
@@ -17,6 +20,7 @@ namespace ESpecies.Models
         public int ListingDate { get; set; }
         public string Description { get; set; }
         public string SponsorId { get; set; }
+        public string test { get; set; }
         
         public virtual ICollection<Donation> Donation { get; set; }
         public virtual ICollection<Cart> Cart { get; set; }
