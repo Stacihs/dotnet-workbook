@@ -1,0 +1,113 @@
+@model IEnumerable<ESpecies.Models.Species>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ComName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CountryId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EntityId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ListingDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PopAbbrev)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PopDesc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SciName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SpCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SponsorId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TSN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VipCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.test)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ComName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CountryId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EntityId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ListingDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PopAbbrev)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PopDesc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SciName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SpCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SponsorId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TSN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VipCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.test)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

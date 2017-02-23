@@ -227,21 +227,23 @@
 C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Program.cs
 C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Startup.cs
 C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Controllers\AccountController.cs
+C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Controllers\CartController.cs
+C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Controllers\DonationController.cs
 C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Controllers\HomeController.cs
 C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Controllers\ManageController.cs
+C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Controllers\SpeciesController.cs
 C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Data\ApplicationDbContext.cs
 C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Data\Migrations\00000000000000_CreateIdentitySchema.cs
 C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs
 C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Data\Migrations\20170222011744_Initial.cs
 C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Data\Migrations\20170222011744_Initial.Designer.cs
-C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Data\Migrations\20170222013219_get-help Nuget.cs
-C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Data\Migrations\20170222013219_get-help Nuget.Designer.cs
+C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Data\Migrations\20170222020206_ApplicationDBContext.cs
+C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Data\Migrations\20170222020206_ApplicationDBContext.Designer.cs
 C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Data\Migrations\ApplicationDbContextModelSnapshot.cs
 C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Models\ApplicationUser.cs
 C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Models\Cart.cs
 C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Models\Donation.cs
 C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Models\Species.cs
-C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Models\Sponsor.cs
 C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Models\AccountViewModels\ExternalLoginConfirmationViewModel.cs
 C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Models\AccountViewModels\ForgotPasswordViewModel.cs
 C:\Users\Staci\Documents\GitHub\dotnet-workbook\Checkpoint2\src\ESpecies\Models\AccountViewModels\LoginViewModel.cs

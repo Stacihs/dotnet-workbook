@@ -1,0 +1,36 @@
+@model ESpecies.Models.Cart
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cart</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EntityId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EntityId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SponsorID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SponsorID)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
