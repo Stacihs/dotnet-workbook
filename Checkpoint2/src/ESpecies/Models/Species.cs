@@ -22,9 +22,9 @@ namespace ESpecies.Models
         public string SponsorId { get; set; }
         public string test { get; set; }
         
-        public virtual ICollection<Donation> Donation { get; set; }
-        public virtual ICollection<Cart> Cart { get; set; }
-        public virtual ICollection<ApplicationUser> ApplicationUser { get; set; }
+        //public virtual ICollection<Donation> Donation { get; set; }
+        //public virtual ICollection<Cart> Cart { get; set; }
+        //public virtual ICollection<ApplicationUser> ApplicationUser { get; set; }
    
     }
 }
