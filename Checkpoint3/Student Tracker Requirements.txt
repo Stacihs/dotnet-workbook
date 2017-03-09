@@ -1,0 +1,38 @@
+Requirement/Functionality:							ROLES
+										School Admin: (Roles:schoolmanager)
+Login = school email								 - manage schedule
+										 - manage students
+Student Index:									 - manage spaces
+- Name or Id
+- Add/remove student
+- Student model data hashed
+										
+
+School Model:
+-Id
+-Name
+-Street
+-City
+-Zip
+-State
+-Phone
+-Contact
+-Email pattern(ex.@greaterheartsmontevista.org)
+-Time Zone
+
+Space Model:
+-Id
+-Room
+-Location
+
+Schedule Model:
+-Id
+-Name period
+
+Student Model:
+
+Table with 3 columns: period, student, space
+
+add jQuery to auto-refresh search page
+								
+	
