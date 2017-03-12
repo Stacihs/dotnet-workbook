@@ -14,15 +14,30 @@ namespace StudentFinder.Data
             
         }
 
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<Student>()
+        //        .HasMany(x => x.)
+        //        .WithMany(x => x.Recipes)
+        //    .Map(x =>
+        //    {
+        //        x.ToTable("Cookbooks"); // third table is named Cookbooks
+        //x.MapLeftKey("RecipeId");
+        //        x.MapRightKey("MemberId");
+        //    });
+
+            
+        //}
+
         public StudentFinderContext(DbContextOptions<StudentFinderContext> options) : base(options)
         {
             Database.EnsureCreated();
         }
 
         //public DbSet<CentralModel> Central { get; set; }
-        public DbSet<ScheduleModel> Schedule { get; set; }
-        public DbSet<SchoolModel> School { get; set; }
-        public DbSet<SpaceModel> Space { get; set; }
-        public DbSet<StudentModel> Student { get; set; }
+        public DbSet<Schedule> Schedule { get; set; }
+        public DbSet<School> School { get; set; }
+        public DbSet<Space> Space { get; set; }
+        public DbSet<Student> Student { get; set; }
     }
 }
