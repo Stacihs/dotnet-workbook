@@ -18,7 +18,7 @@ namespace StudentFinder.Models
         [Required]
         public string To { get; set; }
 
-        public ICollection<Space> Spaces { get; set; }
+        public ICollection<StudentScheduleSpace> StudentScheduleSpace { get; set; }
         //public virtual Schedule Schedules { get; set; }
     }
 }

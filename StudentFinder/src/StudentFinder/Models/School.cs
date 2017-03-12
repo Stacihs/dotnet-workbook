@@ -27,7 +27,7 @@ namespace StudentFinder.Models
         public string Contact { get; set; }
         [Required]
         public string Domain { get; set; }
-       
+
         //public TimeZoneInfo TimeZone { get; set; }
 
     }

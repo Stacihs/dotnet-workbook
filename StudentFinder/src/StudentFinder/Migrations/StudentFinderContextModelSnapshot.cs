@@ -27,14 +27,10 @@ namespace StudentFinder.Migrations
                     b.Property<string>("Label")
                         .IsRequired();
 
-                    b.Property<int?>("StudentId");
-
                     b.Property<string>("To")
                         .IsRequired();
 
                     b.HasKey("Id");
-
-                    b.HasIndex("StudentId");
 
                     b.ToTable("Schedule");
                 });
@@ -87,11 +83,7 @@ namespace StudentFinder.Migrations
                     b.Property<string>("Room")
                         .IsRequired();
 
-                    b.Property<int?>("ScheduleId");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("ScheduleId");
 
                     b.ToTable("Space");
                 });
@@ -104,11 +96,9 @@ namespace StudentFinder.Migrations
                     b.Property<string>("GradeLevel")
                         .IsRequired();
 
-                    b.Property<int>("SchoolId");
-
-                    b.Property<int?>("SpaceId");
-
                     b.Property<int>("StudentId");
+
+                    b.Property<int>("StudentsSchool");
 
                     b.Property<string>("fName")
                         .IsRequired();
@@ -118,30 +108,44 @@ namespace StudentFinder.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("SpaceId");
-
                     b.ToTable("Student");
                 });
 
-            modelBuilder.Entity("StudentFinder.Models.Schedule", b =>
+            modelBuilder.Entity("StudentFinder.Models.StudentScheduleSpace", b =>
                 {
-                    b.HasOne("StudentFinder.Models.Student")
-                        .WithMany("Schedules")
-                        .HasForeignKey("StudentId");
+                    b.Property<int>("StudentId");
+
+                    b.Property<int>("ScheduleId");
+
+                    b.Property<int>("SpaceId");
+
+                    b.HasKey("StudentId", "ScheduleId", "SpaceId");
+
+                    b.HasIndex("ScheduleId");
+
+                    b.HasIndex("SpaceId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("StudentScheduleSpace");
                 });
 
-            modelBuilder.Entity("StudentFinder.Models.Space", b =>
+            modelBuilder.Entity("StudentFinder.Models.StudentScheduleSpace", b =>
                 {
-                    b.HasOne("StudentFinder.Models.Schedule")
-                        .WithMany("Spaces")
-                        .HasForeignKey("ScheduleId");
-                });
+                    b.HasOne("StudentFinder.Models.Schedule", "Schedule")
+                        .WithMany("StudentScheduleSpace")
+                        .HasForeignKey("ScheduleId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
-            modelBuilder.Entity("StudentFinder.Models.Student", b =>
-                {
-                    b.HasOne("StudentFinder.Models.Space")
-                        .WithMany("Students")
-                        .HasForeignKey("SpaceId");
+                    b.HasOne("StudentFinder.Models.Space", "Space")
+                        .WithMany("StudentScheduleSpace")
+                        .HasForeignKey("SpaceId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("StudentFinder.Models.Student", "Student")
+                        .WithMany("StudentScheduleSpace")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
         }
     }

@@ -13,7 +13,7 @@ namespace StudentFinder.Models
         [Required]
         public int Id { get; set; }
         [Required]
-        public int SchoolId { get; set; }
+        public int StudentsSchool { get; set; }
         [Required]
         public int StudentId { get; set; }
         [Required]
@@ -21,10 +21,11 @@ namespace StudentFinder.Models
         [Required]
         public string lName { get; set; }
         [Required]
-        public string GradeLevel { get; set; }  
-        
+        public string GradeLevel { get; set; }
+
         //public virtual Student Students { get; set; }
-        public virtual ICollection<Schedule> Schedules { get; set; }
+        public ICollection<StudentScheduleSpace> StudentScheduleSpace { get; set; }
+
 
     }
 }
