@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StudentFinder.Data;
 using StudentFinder.Models;
+using StudentFinder.Infrastructure;
 
 namespace StudentFinder.Controllers
 {
@@ -68,9 +69,10 @@ namespace StudentFinder.Controllers
                     break;
 
             }
-            
-                return View(await _context.Space.ToListAsync());
-            
+
+            int pageSize = 10;
+            return View(await PaginatedList<Space>.CreateAsync(space.AsNoTracking(), page ?? 1, pageSize));
+
 
         }
 
